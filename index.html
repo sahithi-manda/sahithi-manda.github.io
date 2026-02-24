@@ -1,46 +1,210 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Sahithi Reddy Manda | AI/ML Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahithi Reddy Manda | AI Engineer</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     <style>
+
         body {
-            font-family: Arial;
-            background-color: #0d1117;
-            color: white;
-            text-align: center;
-            padding: 50px;
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #0a0f1c;
+            color: #e6edf3;
         }
-        h1 {
+
+        /* NAVBAR */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            background-color: #0d1117;
+            position: sticky;
+            top: 0;
+        }
+
+        nav h2 {
             color: #58a6ff;
         }
-        .box {
+
+        nav a {
+            color: #e6edf3;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #58a6ff;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            padding: 100px 60px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        .hero span {
+            color: #58a6ff;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #9da5b4;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            background-color: #238636;
+            border: none;
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-right: 10px;
+            font-weight: 600;
+        }
+
+        .btn.secondary {
+            background-color: #21262d;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        /* SECTION */
+        section {
+            padding: 60px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #58a6ff;
+        }
+
+        /* PROJECT CARDS */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
             background-color: #161b22;
-            margin: 20px;
             padding: 20px;
             border-radius: 10px;
+            transition: 0.3s;
         }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* SKILLS */
+        .skills span {
+            background-color: #21262d;
+            padding: 10px 15px;
+            margin: 5px;
+            display: inline-block;
+            border-radius: 6px;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #8b949e;
+        }
+
     </style>
+
 </head>
 <body>
 
-    <h1>Sahithi Reddy Manda</h1>
-    <h2>Aspiring AI Engineer | AIML Student</h2>
+<!-- NAVBAR -->
+<nav>
+    <h2>Sahithi</h2>
+    <div>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
 
-    <div class="box">
-        <h3>Projects</h3>
-        <p>Automated Crop Disease Detection System using AI</p>
-        <p>Tesla Stock Price Prediction</p>
+<!-- HERO -->
+<div class="hero">
+    <h1>Hello, I'm <span>Sahithi Reddy Manda</span></h1>
+    <p>Aspiring AI Engineer specializing in Machine Learning and Intelligent Systems</p>
+
+    <div class="buttons">
+        <a href="https://github.com/sahithi-manda" class="btn">View GitHub</a>
+        <a href="mailto:sahithi2703@gmail.com" class="btn secondary">Contact Me</a>
+    </div>
+</div>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="projects">
+
+        <div class="card">
+            <h3>Crop Disease Detection AI</h3>
+            <p>
+                Built an AI model using computer vision to detect crop diseases from images.
+                Helps farmers identify diseases early.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Tesla Stock Prediction</h3>
+            <p>
+                Machine learning model to predict Tesla stock trends using historical data.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Skills</h2>
+
+    <div class="skills">
+        <span>Python</span>
+        <span>Java</span>
+        <span>Machine Learning</span>
+        <span>Deep Learning</span>
+        <span>Artificial Intelligence</span>
+        <span>Git & GitHub</span>
     </div>
 
-    <div class="box">
-        <h3>Skills</h3>
-        <p>Python | Java | Machine Learning | Artificial Intelligence</p>
-    </div>
+</section>
 
-    <div class="box">
-        <h3>Contact</h3>
-        <p>Email: sahithi2703@gmail.com</p>
-    </div>
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact</h2>
+
+    <p>Email: sahithi2703@gmail.com</p>
+    <p>GitHub: github.com/sahithi-manda</p>
+
+</section>
+
+<footer>
+    © 2026 Sahithi Reddy Manda | AI Engineer Portfolio
+</footer>
 
 </body>
 </html>
